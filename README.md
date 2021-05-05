@@ -18,28 +18,8 @@
 - [ ] Service account support.
 - [ ] Update command.
 
-## Deploying
 
-### Deploy on [Heroku](https://heroku.com)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-### Installation
-- Install required modules.
-```sh
-apt install -y git python3 ffmpeg
-```
-- Clone this git repository.
-```sh 
-git clone https://github.com/viperadnan-git/google-drive-telegram-bot
-```
-- Change Directory
-```sh 
-cd google-drive-telegram-bot
-```
-- Install requirements with pip3
-```sh 
-pip3 install -r requirements.txt
-```
 
 ### Configuration
 **There are two Ways for configuring this bot.**
@@ -55,10 +35,7 @@ pip3 install -r requirements.txt
 - `DATABASE_URL` - Postgres database url.
 - `DOWNLOAD_DIRECTORY` - Custom path for downloads. Must end with a forward `/` slash. (Default to `./downloads/`)
 
-### Deploy 
-```sh 
-python3 -m bot
-```
+
 
 ## Credits
 - [Dan](https://github.com/delivrance) for creating [PyroGram](https://pyrogram.org)
