@@ -21,10 +21,6 @@
 
 
 
-### Configuration
-**There are two Ways for configuring this bot.**
-1. Add values to Environment Variables. And add a `ENV` var to Anything to enable it.
-2. Add values in [config.py](./bot/config.py). And make sure that no `ENV` environment variables existing.
 
 ### Configuration Values
 - `BOT_TOKEN` - Get it by contacting to [BotFather](https://t.me/botfather)
