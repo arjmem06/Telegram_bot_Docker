@@ -6,6 +6,4 @@ COPY . /app
 
 RUN pip3 install -r requirements.txt
 
-#ENV BBOT_TOKEN = "1789981869:AAFumqOzMcvNtyRqL-k_itoTcfYcIXTWWtM"
-
 CMD python3 -m bot
