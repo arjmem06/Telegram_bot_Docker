@@ -40,14 +40,19 @@ A Compose file looks like this:
 
 ```yaml
 services:
-  web:
-    build: .
-    ports:
-      - "5000:5000"
-    volumes:
-      - .:/code
-  redis:
-    image: redis
+  Telegram_bot:      
+    image: arjmem2/telegram_bot
+    environment:
+      bot_token: 
+      app_id : 
+      api_hash : 
+      database_url : 
+      sudo_users :  # Sepearted by space.
+      suport_chat_link : 
+      dowload_directory : "./downloads/"
+      g_drive_client_id : 
+      g_drive_client_secret :
+    restart: unless-stopped     
 ```
 
 
