@@ -51,7 +51,8 @@ services:
       POSTGRES_USER : 
       POSTGRES_PASSWORD : 
       POSTGRES_URL : # IP:PUERTO "5432"            
-      
+    restart: unless-stopped   
+    
   db:
     image: postgres
     restart: always
@@ -63,7 +64,7 @@ services:
     ports:
       - 5432:5432      
       
-    restart: unless-stopped     
+  
 ```
 
 
