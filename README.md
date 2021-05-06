@@ -42,7 +42,6 @@ services:
       bot_token: 
       app_id : 
       api_hash : 
-      database_url : 
       sudo_users :  # Sepearted by space.
       suport_chat_link : 
       dowload_directory : "./downloads/"
@@ -60,6 +59,7 @@ services:
       POSTGRES_PASSWORD: 
       POSTGRES_USER : 
       POSTGRES_DB : 
+      POSTGRES_URL : 
     ports:
       - 5432:5432      
       
