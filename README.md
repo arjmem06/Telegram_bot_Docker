@@ -48,6 +48,21 @@ services:
       dowload_directory : "./downloads/"
       g_drive_client_id : 
       g_drive_client_secret :
+      POSTGRES_DB : 
+      POSTGRES_USER : 
+      POSTGRES_PASSWORD : 
+      POSTGRES_URL : # IP:PUERTO "5432"            
+      
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 
+      POSTGRES_USER : 
+      POSTGRES_DB : 
+    ports:
+      - 5432:5432      
+      
     restart: unless-stopped     
 ```
 
