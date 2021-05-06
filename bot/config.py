@@ -4,7 +4,7 @@ class config:
     BOT_TOKEN = os.environ['bot_token']
     APP_ID = os.environ['app_id']
     API_HASH = os.environ['api_hash']
-    DATABASE_URL = os.environ['database_url']
+    DATABASE_URL = "postgres://" + os.environ['POSTGRES_USER'] + ":" + os.environ['POSTGRES_PASSWORD']  +"@" + os.environ['POSTGRES_URL']  + "/" + os.environ['POSTGRES_DB']  
     SUDO_USERS = os.environ['sudo_users']
     SUPPORT_CHAT_LINK = os.environ['suport_chat_link']
     DOWNLOAD_DIRECTORY = os.environ['dowload_directory']
